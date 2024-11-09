@@ -1,0 +1,54 @@
+POST http://localhost:3000/user_registration/
+Content-Type: application/json
+
+{
+    "id":"550e8400-e29b-41d4-a716-446655440000",
+    "name":"Veena",
+    "email":"veena@gmail.com",
+    "password":"veena@1234"
+}
+
+###
+
+POST http://localhost:3000/user_login/
+Content-Type: application/json 
+
+{
+    "email":"veena@gmail.com", 
+    "password":"veena@1234"
+}
+
+### 
+
+POST http://localhost:3000/loan_request/
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZW5hQGdtYWlsLmNvbSIsImlhdCI6MTczMTA3MDY3OH0.bd3wT9CGAMmhvfScDvWuoxhaMI3nNfAGN71jMLoQTbQ
+
+{
+    "id":"250e8400-e29b-41d4-a716-446655440001",
+    "loanAmount":5000,
+    "interestRate":"2%",
+    "weeks":4,
+    "simpleInterest":400,
+    "total":5400,
+    "weeklyPayment":1350
+}
+
+###
+
+
+GET http://localhost:3000/view_loans/
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZW5hQGdtYWlsLmNvbSIsImlhdCI6MTczMTA3MDY3OH0.bd3wT9CGAMmhvfScDvWuoxhaMI3nNfAGN71jMLoQTbQ
+ 
+### 
+
+GET http://localhost:3000/user_profile/
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZW5hQGdtYWlsLmNvbSIsImlhdCI6MTczMTA3MDY3OH0.bd3wT9CGAMmhvfScDvWuoxhaMI3nNfAGN71jMLoQTbQ
+ ### 
+ 
+
+ 
+
+ 
